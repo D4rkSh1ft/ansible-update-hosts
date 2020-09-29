@@ -1,0 +1,2 @@
+ansible_remote_user: REMOTEUSER
+ansible_become_password: REMOTEPASSWORD

@@ -1,0 +1,2 @@
+ansible_remote_user: "{{vault_ansible_remote_user}}"
+ansible_become_password: "{{vault_ansible_become_password}}"

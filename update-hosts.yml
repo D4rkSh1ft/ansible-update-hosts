@@ -1,0 +1,21 @@
+---
+- name: Update Hosts
+  hosts: all
+  remote_user: "{{ansible_remote_user}}"
+  become: "{{ansible_become}}"
+
+  tasks:
+    - name: Debug
+      debug:
+        msg: Hi
+
+    - name: Update Packages
+      apt:
+        update_cache: yes
+        upgrade: safe
+      become: yes
+      register: apt_updates
+
+    - name: Update Package Status
+      debug:
+        var: apt_updates.stdout_lines

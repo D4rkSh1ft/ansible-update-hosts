@@ -1,0 +1,7 @@
+group_vars/*/vault.yaml
+host_vars/*/vault.yaml
+
+ansible.log
+.ansible-retry
+.vault_password_file
+hosts
